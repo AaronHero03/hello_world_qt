@@ -325,6 +325,9 @@ release/moc_MainWindow.cpp: include/MainWindow.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qtextedit.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QColorDialog \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qcolordialog.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialog.h \
 		release/moc_predefs.h \
 		../../../../QT/6.9.1/mingw_64/bin/moc.exe
 	D:\QT\6.9.1\mingw_64\bin\moc.exe $(DEFINES) --include "D:/Coding/POO 2/QT/hello_world_qt/release/moc_predefs.h" -ID:/QT/6.9.1/mingw_64/mkspecs/win32-g++ -I"D:/Coding/POO 2/QT/hello_world_qt" -I"D:/Coding/POO 2/QT/hello_world_qt/include" -ID:/QT/6.9.1/mingw_64/include -ID:/QT/6.9.1/mingw_64/include/QtWidgets -ID:/QT/6.9.1/mingw_64/include/QtGui -ID:/QT/6.9.1/mingw_64/include/QtCore -I"C:/Program Files (x86)/MinGW/include/c++/13.2.0" -I"C:/Program Files (x86)/MinGW/include/c++/13.2.0/x86_64-w64-mingw32" -I"C:/Program Files (x86)/MinGW/include/c++/13.2.0/backward" -I"C:/Program Files (x86)/MinGW/lib/gcc/x86_64-w64-mingw32/13.2.0/include" -I"C:/Program Files (x86)/MinGW/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed" -I"C:/Program Files (x86)/MinGW/x86_64-w64-mingw32/include" include\MainWindow.h -o release\moc_MainWindow.cpp
@@ -565,7 +568,10 @@ release/main.o: src/main.cpp ../../../../QT/6.9.1/mingw_64/include/QtWidgets/QAp
 		../../../../QT/6.9.1/mingw_64/include/QtGui/qtextoption.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qtextedit.h \
-		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QColorDialog \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qcolordialog.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o src\main.cpp
 
 release/MainWindow.o: src/MainWindow.cpp include/MainWindow.h \
@@ -785,6 +791,9 @@ release/MainWindow.o: src/MainWindow.cpp include/MainWindow.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QTextEdit \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qtextedit.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QColorDialog \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qcolordialog.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialog.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qmenu.h \
@@ -800,7 +809,6 @@ release/MainWindow.o: src/MainWindow.cpp include/MainWindow.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QHBoxLayout \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QMessageBox \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qmessagebox.h \
-		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialog.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\MainWindow.o src\MainWindow.cpp
 

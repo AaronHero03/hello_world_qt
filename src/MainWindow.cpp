@@ -8,19 +8,24 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
-      label_(new QLabel("Texto inicial", this)),
+      label_(new QLabel("Formulario para entrar al Tec", this)),
       button_(new QPushButton("Presióname", this)),
       lineEdit_(new QLineEdit(this)),
       textEdit_(new QTextEdit(this))
 {
+    
     // 1) Configurar la ventana principal
-    setWindowTitle("Ejemplo Qt – Controles Básicos");
+    setWindowTitle("Formulario de admisiones 2025");
     resize(600, 400);
 
     // 2) Barra de menú con acción "Salir"
-    QMenu *fileMenu = menuBar()->addMenu("&Archivo");
-    QAction *exitAction = fileMenu->addAction("Salir");
+    QMenu *menuArchivo = menuBar()->addMenu("&Archivo");
+    QMenu *menuEditar = menuBar()->addMenu("&Editar");
+
+    QAction *exitAction = menuArchivo->addAction("Salir");
+    QAction *secondAction = menuEditar->addAction("Segunda Acción");
     connect(exitAction, &QAction::triggered, this, &QMainWindow::close);
+    connect(secondAction, &QAction::triggered, this, &QMainWindow::close);
 
     // 3) Barra de estado
     statusBar()->showMessage("Listo");
@@ -28,9 +33,13 @@ MainWindow::MainWindow(QWidget *parent)
     // 4) Barra de herramientas que reutiliza la acción "Salir"
     QToolBar *toolbar = addToolBar("Principal");
     toolbar->addAction(exitAction);
+    toolbar->addAction(secondAction);
 
     // 5) Conectar el botón al slot
     connect(button_, &QPushButton::clicked, this, &MainWindow::on_buttonClicked);
+
+    ////////////////////////////////////////////////////////////////////////////
+
 
     // 6) Crear un widget central con layout
     QWidget *central = new QWidget(this);
@@ -42,7 +51,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Layout horizontal para QLabel + QLineEdit + QPushButton
     QHBoxLayout *hbox = new QHBoxLayout;
-    hbox->addWidget(new QLabel("Ingresa texto:", this));
+    hbox->addWidget(new QLabel("Nombre", this));
     hbox->addWidget(lineEdit_);
     hbox->addWidget(button_);
     vbox->addLayout(hbox);
@@ -52,6 +61,7 @@ MainWindow::MainWindow(QWidget *parent)
     vbox->addWidget(textEdit_);
 
     central->setLayout(vbox);
+
 }
 
 MainWindow::~MainWindow()

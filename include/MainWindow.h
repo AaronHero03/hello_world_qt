@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <QLineEdit>
 #include <QTextEdit>
+#include <QColorDialog> // <- nuevo include
 
 class MainWindow : public QMainWindow
 {
@@ -13,7 +14,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
-
+    
 private slots:
     void on_buttonClicked();
 
