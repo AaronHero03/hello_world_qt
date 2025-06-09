@@ -21,6 +21,10 @@ private slots:
 private:
     QLabel      *label_;
     QPushButton *button_;
-    QLineEdit   *lineEdit_;
-    QTextEdit   *textEdit_;
+
+    QLineEdit *nombreEdit_;  // Campo específico para nombre
+    QLineEdit *carreraEdit_; // Campo específico para carrera
+    QLineEdit *edadEdit_;    // Campo específico para edad
+    
+    QTextEdit *textEdit_;
 };

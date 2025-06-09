@@ -809,7 +809,9 @@ debug/MainWindow.o: src/MainWindow.cpp include/MainWindow.h \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QHBoxLayout \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QMessageBox \
 		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qmessagebox.h \
-		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/QApplication \
+		../../../../QT/6.9.1/mingw_64/include/QtWidgets/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\MainWindow.o src\MainWindow.cpp
 
 debug/moc_MainWindow.o: debug/moc_MainWindow.cpp 
