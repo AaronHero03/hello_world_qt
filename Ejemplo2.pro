@@ -2,7 +2,7 @@
 # Nombre del ejecutable y configuración de Qt
 ##########################################################
 TEMPLATE = app
-TARGET = hello_world_qt
+TARGET = Ejemplo2
 
 QT += core gui widgets
 CONFIG += c++17 console

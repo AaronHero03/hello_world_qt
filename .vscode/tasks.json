@@ -8,7 +8,7 @@
       "args": [
         "-spec",
         "win32-g++",
-        "hello_world_qt.pro",
+        "Ejemplo2.pro",
         "-o",
         "Makefile"
       ],
@@ -39,7 +39,7 @@
     {
       "label": "C/C++: g++.exe build active file",
       "type": "cppbuild",
-      "command": "C:\\Program Files (x86)\\MinGW\\bin\\g++.exe",
+      "command": "C:\\msys64\\ucrt64\\bin",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
